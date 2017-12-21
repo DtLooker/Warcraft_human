@@ -1,0 +1,7 @@
+[ 2017-12-21T22:51:19+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=18633
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=18633 [运行时间：0.058638s][吞吐率：17.05req/s] [内存消耗：2,481.86kb] [文件加载：38]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000914s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.005351s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001028s ]
+
+---------------------------------------------------------------
