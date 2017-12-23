@@ -1,0 +1,228 @@
+[ 2017-12-23T21:01:13+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：40.947497s][吞吐率：0.02req/s] [内存消耗：2,485.68kb] [文件加载：38]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002391s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.065192s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.002404s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T21:05:31+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：45.723404s][吞吐率：0.02req/s] [内存消耗：2,485.88kb] [文件加载：38]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.051343s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000714s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T21:09:15+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.056312s][吞吐率：17.76req/s] [内存消耗：2,471.64kb] [文件加载：37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001128s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004286s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000726s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T21:10:01+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.055247s][吞吐率：18.10req/s] [内存消耗：2,471.64kb] [文件加载：37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001064s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009914s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000775s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T22:30:24+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.058127s][吞吐率：17.20req/s] [内存消耗：2,472.34kb] [文件加载：37]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001104s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004605s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000748s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T22:30:58+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.150438s][吞吐率：6.65req/s] [内存消耗：2,481.30kb] [文件加载：38]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001662s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.045052s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002363s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T22:37:26+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.073936s][吞吐率：13.53req/s] [内存消耗：2,565.03kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004468s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.003935s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000735s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T22:37:57+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.068823s][吞吐率：14.53req/s] [内存消耗：2,565.03kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000959s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.003997s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004130s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000693s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:03:50+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.115066s][吞吐率：8.69req/s] [内存消耗：2,666.42kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001039s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004713s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004415s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.053848s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000720s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:07:46+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.071792s][吞吐率：13.93req/s] [内存消耗：2,666.35kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001076s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004592s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004515s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005154s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000684s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:08:29+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.091063s][吞吐率：10.98req/s] [内存消耗：2,667.77kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004113s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004417s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000802s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:24:06+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.072493s][吞吐率：13.79req/s] [内存消耗：2,667.16kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004281s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004452s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004733s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000813s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:24:08+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.078985s][吞吐率：12.66req/s] [内存消耗：2,667.16kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000953s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.006285s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.006090s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004385s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000823s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:30:31+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.090281s][吞吐率：11.08req/s] [内存消耗：2,668.27kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001097s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004124s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004361s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004249s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000937s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:31:03+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.066060s][吞吐率：15.14req/s] [内存消耗：2,668.64kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000980s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004212s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004845s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004386s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000718s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:41:01+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.091031s][吞吐率：10.99req/s] [内存消耗：2,668.66kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004074s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.003937s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004412s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000762s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:45:11+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：35.749051s][吞吐率：0.03req/s] [内存消耗：2,669.42kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001604s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.055876s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.006214s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006100s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001195s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:46:17+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：41.735766s][吞吐率：0.02req/s] [内存消耗：2,669.83kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001019s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004170s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004039s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004122s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000743s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:54:38+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：12.657884s][吞吐率：0.08req/s] [内存消耗：2,672.38kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001120s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004147s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004166s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004759s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000750s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:54:47+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.104281s][吞吐率：9.59req/s] [内存消耗：2,670.41kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000970s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004190s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004942s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004159s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001558s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:55:43+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：20.821569s][吞吐率：0.05req/s] [内存消耗：2,671.73kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000944s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.003978s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000670s ]
+
+---------------------------------------------------------------
+[ 2017-12-23T23:58:49+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1?XDEBUG_SESSION_START=17535
+[ log ] h.com/banner/1?XDEBUG_SESSION_START=17535 [运行时间：0.078328s][吞吐率：12.77req/s] [内存消耗：2,670.69kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.004237s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004363s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004351s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000800s ]
+
+---------------------------------------------------------------

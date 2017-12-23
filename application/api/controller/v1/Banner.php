@@ -24,11 +24,14 @@ class Banner
     {
         (new IDMustBePositiveInt())->goCheck();
 
+        //Db查询返回一个banner的数组
         $banner = BannerModel::getBannerById($id);
+
+
         if(!$banner){
             throw new BannerMissException();
         }
-        return json($banner);
+        return $banner;
 
     }
 }

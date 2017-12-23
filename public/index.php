@@ -20,6 +20,7 @@ define('LOG_PATH', __DIR__ . '/../log/');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';
 
+//日志配置已经关闭，要想记录，写在每次启动都要运行的index.php文件里面
 \think\Log::init([
     'type' => 'File',
     'path' => LOG_PATH,
