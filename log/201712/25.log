@@ -1,0 +1,32 @@
+[ 2017-12-25T00:00:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=0.1,2,3&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme?ids=0.1,2,3&XDEBUG_SESSION_START=10870 [运行时间：66.071306s][吞吐率：0.02req/s] [内存消耗：1,335.18kb] [文件加载：30]
+
+---------------------------------------------------------------
+[ 2017-12-25T00:02:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870 [运行时间：0.035806s][吞吐率：27.93req/s] [内存消耗：1,334.58kb] [文件加载：30]
+
+---------------------------------------------------------------
+[ 2017-12-25T00:02:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] h.com/api/v1/banner/1 [运行时间：0.104808s][吞吐率：9.54req/s] [内存消耗：2,697.79kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001892s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.005386s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.005540s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004653s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000846s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T00:03:59+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] h.com/api/v1/banner/1 [运行时间：0.153475s][吞吐率：6.52req/s] [内存消耗：2,698.08kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002162s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009230s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.008642s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008143s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001501s ]
+
+---------------------------------------------------------------

@@ -10,9 +10,9 @@ namespace app\api\model;
 
 
 use think\Exception;
-use think\Model;
 
-class Banner extends Model
+class Banner extends BaseModel
+
 {
 
     protected $hidden = ['delete_time', 'update_time'];
@@ -22,7 +22,8 @@ class Banner extends Model
 
     //关联表 一对多hasMany
     //参数1：要关联的表的模型名；  参数2：此表关联其他表的外键   参数3：当前表的主键
-    public function items(){
+    public function items()
+    {
         return $this->hasMany('bannerItem', 'banner_id', 'id');
     }
 
