@@ -232,3 +232,31 @@ INSERT INTO `product` VALUES ('30', '八宝莲子 200克', '0.01', '999', null, 
 INSERT INTO `product` VALUES ('31', '深涧木耳 78克', '0.01', '999', null, '7', '/product-rice@7.png', '1', null, null, null, '60');
 INSERT INTO `product` VALUES ('32', '土豆 半斤', '0.01', '999', null, '3', '/product-vg@4.png', '1', null, null, null, '66');
 INSERT INTO `product` VALUES ('33', '青椒 半斤', '0.01', '999', null, '3', '/product-vg@5.png', '1', null, null, null, '67');
+
+
+-- ----------------------------
+-- Table structure for category
+-- ----------------------------
+DROP TABLE IF EXISTS `category`;
+CREATE TABLE `category`(
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL COMMENT '分类名称',
+  `topic_img_id` int(11) DEFAULT NULL COMMENT '外键，关联image表',
+  `delete_time` int(11) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL COMMENT '描述',
+  `update_time` int(11) DEFAULT NULL,
+  PRIMARY KEY(`id`)
+)ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COMMENT='商品类目';
+-- ----------------------------
+-- Records of category
+-- ----------------------------
+INSERT INTO `category` VALUES ('2', '果味', '6', null, null, null);
+INSERT INTO `category` VALUES ('3', '蔬菜', '5', null, null, null);
+INSERT INTO `category` VALUES ('4', '炒货', '7', null, null, null);
+INSERT INTO `category` VALUES ('5', '点心', '4', null, null, null);
+INSERT INTO `category` VALUES ('6', '粗茶', '8', null, null, null);
+INSERT INTO `category` VALUES ('7', '淡饭', '9', null, null, null);
+
+
+
+

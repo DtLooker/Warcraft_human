@@ -11,9 +11,20 @@
 
 use think\Route;
 
-
-//Banner
+//debug ?XDEBUG_SESSION_START=10870
+//Banner  h.com/api/v1/banner/1
 Route::get('api/:version/banner/:id', 'api/:version.Banner/getBanner');
 
-//Theme
+//Theme  h.com/api/v1/theme?ids=1,2,3
 Route::get('api/:version/theme', 'api/:version.Theme/getSimpleList');
+
+//Theme type   h.com/api/v1/theme/1
+Route::get('api/:version/theme/:id', 'api/:version.Theme/getComplexList');
+
+//Product   h.com/api/v1/product?count=15
+Route::get('api/:version/product', 'api/:version.Product/getRecent');
+// Category--->Product    h.com/api/v1/product/by_category?id=4
+Route::get('api/:version/product/by_category', 'api/:version.Product/getAllInCategory');
+
+//Category  h.com/api/v1/category/all
+Route::get('api/:version/category/all', 'api/:version.Category/getAllCategory');

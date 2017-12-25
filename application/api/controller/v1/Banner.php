@@ -25,13 +25,12 @@ class Banner
         (new IDMustBePositiveInt())->goCheck();
 
         //Db查询返回一个banner的数组
-        $banner = BannerModel::getBannerById($id);
+        $result = BannerModel::getBannerById($id);
 
-
-        if(!$banner){
+        if(!$result){
             throw new BannerMissException();
         }
-        return $banner;
+        return $result;
 
     }
 }

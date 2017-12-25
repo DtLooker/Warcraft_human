@@ -30,3 +30,320 @@
 [ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001501s ]
 
 ---------------------------------------------------------------
+[ 2017-12-25T20:02:52+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870 [运行时间：0.073109s][吞吐率：13.68req/s] [内存消耗：2,627.77kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000974s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004175s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004192s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000716s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:04:09+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870 [运行时间：0.078690s][吞吐率：12.71req/s] [内存消耗：2,628.29kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001040s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004497s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004707s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000882s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:18:51+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870 [运行时间：0.098074s][吞吐率：10.20req/s] [内存消耗：2,628.73kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001210s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.005675s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004674s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000820s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:25:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=10870 [运行时间：0.070655s][吞吐率：14.15req/s] [内存消耗：2,629.34kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001152s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004698s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004229s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000778s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:36:07+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.140718s][吞吐率：7.11req/s] [内存消耗：2,652.37kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004140s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003998s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.043155s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:40:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.084144s][吞吐率：11.88req/s] [内存消耗：2,652.37kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001076s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004281s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003660s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000869s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:42:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.075671s][吞吐率：13.22req/s] [内存消耗：2,652.91kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001030s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004265s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003519s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000866s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:42:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.093730s][吞吐率：10.67req/s] [内存消耗：2,653.14kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004113s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003992s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003651s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.001095s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T20:43:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.079962s][吞吐率：12.51req/s] [内存消耗：2,652.66kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004269s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003884s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003756s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000831s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:06:11+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.091449s][吞吐率：10.94req/s] [内存消耗：2,749.49kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001334s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004480s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.004127s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004096s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000762s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:08:02+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.106652s][吞吐率：9.38req/s] [内存消耗：2,749.58kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.011516s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008658s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005640s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000555s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:15:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.093783s][吞吐率：10.66req/s] [内存消耗：2,750.49kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001072s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003955s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004088s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003723s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003752s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000675s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:18:47+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.075210s][吞吐率：13.30req/s] [内存消耗：2,750.51kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001097s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004465s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003749s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004024s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000646s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:19:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.100456s][吞吐率：9.95req/s] [内存消耗：2,750.53kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001407s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.006510s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.001998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.004208s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004593s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000666s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:19:47+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.083639s][吞吐率：11.96req/s] [内存消耗：2,750.45kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000896s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003884s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004139s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000653s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:20:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.077334s][吞吐率：12.93req/s] [内存消耗：2,750.47kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004165s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.004516s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004017s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000752s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T21:20:39+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/theme/1?XDEBUG_SESSION_START=10870 [运行时间：0.077420s][吞吐率：12.92req/s] [内存消耗：2,750.56kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004317s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004074s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.003875s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003736s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000651s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:03:41+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?count=15&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?count=15&XDEBUG_SESSION_START=10870 [运行时间：0.074992s][吞吐率：13.33req/s] [内存消耗：2,524.05kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001150s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004604s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.000965s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:04:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?count=5&XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?count=5&XDEBUG_SESSION_START=10870 [运行时间：0.050808s][吞吐率：19.68req/s] [内存消耗：2,518.98kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001043s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004404s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.000903s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:06:03+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?XDEBUG_SESSION_START=10870 [运行时间：0.080330s][吞吐率：12.45req/s] [内存消耗：2,523.96kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000985s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004085s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.000896s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:25:47+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?XDEBUG_SESSION_START=10870 [运行时间：146.486588s][吞吐率：0.01req/s] [内存消耗：2,676.56kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001114s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005134s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.001027s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:26:32+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?XDEBUG_SESSION_START=10870 [运行时间：25.934474s][吞吐率：0.04req/s] [内存消耗：2,636.02kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001070s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004875s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.000928s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:32:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?XDEBUG_SESSION_START=10870 [运行时间：0.103765s][吞吐率：9.64req/s] [内存消耗：2,585.63kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001827s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007748s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.001795s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:34:14+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product?XDEBUG_SESSION_START=10870
+[ log ] h.com/api/v1/product?XDEBUG_SESSION_START=10870 [运行时间：0.078495s][吞吐率：12.74req/s] [内存消耗：2,585.63kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001223s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005505s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.001255s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:38:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] h.com/api/v1/banner/1 [运行时间：0.099955s][吞吐率：10.00req/s] [内存消耗：2,762.84kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002258s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.003787s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.004261s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004003s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000812s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:38:38+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] h.com/api/v1/theme?ids=1,2,3 [运行时间：0.083655s][吞吐率：11.95req/s] [内存消耗：2,697.36kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004201s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003888s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000809s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T22:39:06+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ log ] h.com/api/v1/theme/1 [运行时间：0.146573s][吞吐率：6.82req/s] [内存消耗：2,814.80kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001634s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.007369s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.006686s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.001571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005190s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.000626s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T23:04:51+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] h.com/api/v1/category/all [运行时间：0.082265s][吞吐率：12.16req/s] [内存消耗：2,477.76kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001063s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004285s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004048s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000873s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T23:06:38+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] h.com/api/v1/category/all [运行时间：0.078181s][吞吐率：12.79req/s] [内存消耗：2,478.02kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004148s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004394s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000831s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T23:40:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=4
+[ log ] h.com/api/v1/product/by_category?id=4 [运行时间：0.041386s][吞吐率：24.16req/s] [内存消耗：2,589.77kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001116s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003983s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 4 [ RunTime:0.000912s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T23:41:07+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=3
+[ log ] h.com/api/v1/product/by_category?id=3 [运行时间：0.045403s][吞吐率：22.02req/s] [内存消耗：2,589.70kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001040s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004102s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 3 [ RunTime:0.001062s ]
+
+---------------------------------------------------------------
+[ 2017-12-25T23:41:52+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=3
+[ log ] h.com/api/v1/product/by_category?id=3 [运行时间：0.049280s][吞吐率：20.29req/s] [内存消耗：2,590.32kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001059s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004093s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 3 [ RunTime:0.000919s ]
+
+---------------------------------------------------------------

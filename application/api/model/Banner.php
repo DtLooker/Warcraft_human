@@ -40,7 +40,7 @@ class Banner extends BaseModel
 
         //模型查询，返回的是一个模型对象
         //调用with方法，才能获取到关联表的数据。 参数是模型类中关联的方法名，有多个关联参数用数组表示
-        $banner = self::with(['items', 'items.img'])->find($id);
-        return $banner;
+        $result = self::with(['items', 'items.img'])->find($id);
+        return $result;
     }
 }
