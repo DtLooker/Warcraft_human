@@ -258,5 +258,22 @@ INSERT INTO `category` VALUES ('6', '粗茶', '8', null, null, null);
 INSERT INTO `category` VALUES ('7', '淡饭', '9', null, null, null);
 
 
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `openid` varchar(50) NOT NULL,
+  `nickname` varchar(50) DEFAULT NULL,
+  `extend` varchar(255) DEFAULT NULL,
+  `delete_time` int(11) DEFAULT NULL,
+  `create_time` int(11) DEFAULT NULL COMMENT '注册时间',
+  `update_time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `openid` (`openid`)
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8mb4;
+
+
 
 

@@ -28,3 +28,6 @@ Route::get('api/:version/product/by_category', 'api/:version.Product/getAllInCat
 
 //Category  h.com/api/v1/category/all
 Route::get('api/:version/category/all', 'api/:version.Category/getAllCategory');
+
+//Token
+Route::post('api/:version/token/user', 'api/:version.Token/getToken');
