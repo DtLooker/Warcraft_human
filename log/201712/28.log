@@ -1,0 +1,55 @@
+[ 2017-12-28T00:24:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=19290
+[ log ] h.com/api/v1/token/user?XDEBUG_SESSION_START=19290 [运行时间：1.105569s][吞吐率：0.90req/s] [内存消耗：2,658.51kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001727s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006819s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.001288s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T00:29:23+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.139877s][吞吐率：7.15req/s] [内存消耗：2,765.85kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001035s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006172s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.005023s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] INSERT INTO `user_address` (`name` , `mobile` , `province` , `city` , `country` , `detail` , `user_id`) VALUES ('looker' , '18888888888' , '湖南' , '长沙' , '星沙' , '哈哈哈' , 1) [ RunTime:0.076650s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T00:30:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.051615s][吞吐率：19.37req/s] [内存消耗：2,767.77kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000949s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004253s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004513s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000666s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T00:30:35+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.129191s][吞吐率：7.74req/s] [内存消耗：2,762.79kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004445s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004626s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `country`='杨慧'  WHERE  `id` = 35 [ RunTime:0.064937s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T00:31:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.057624s][吞吐率：17.35req/s] [内存消耗：2,767.66kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000964s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004601s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004498s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000648s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T00:31:34+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.112871s][吞吐率：8.86req/s] [内存消耗：2,762.60kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004716s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004401s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `mobile`='18888888889'  WHERE  `id` = 35 [ RunTime:0.053758s ]
+
+---------------------------------------------------------------

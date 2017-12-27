@@ -18,7 +18,8 @@ class Token
 
         (new TokenGet())->goCheck();
 
-        $token = new UserToken($code);
-        $token->get();
+        $user = new UserToken($code);
+        $token = $user->get();
+        return $token;
     }
 }

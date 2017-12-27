@@ -50,4 +50,31 @@ class BaseValidate extends Validate
             return true;
         }
     }
+
+    //验证手机号码
+    protected function isMobile($value, $rule='', $data='', $field=''){
+        $rule = '^1(3|4|5|7|8)[0-9]\d{8}$^';
+        $result = preg_match($rule, $value);
+        if($result){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //获取所有通过规则验证的参数
+    public function getDataByRule($arrays){
+        //用户id是不能通过用户直接传递过来的，有此情况，判定为非法
+        if (array_key_exists('user_id', $arrays) | array_key_exists('uid', $arrays)){
+            throw  new ParameterException([
+                'msg' => '参数中包含非法参数名user_id或uid'
+            ]);
+        }
+
+        $newArray = [];
+        foreach ($this->rule as $key => $value){
+            $newArray[$key] = $arrays[$key];
+        }
+        return $newArray;
+    }
 }

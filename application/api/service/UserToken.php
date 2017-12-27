@@ -49,7 +49,7 @@ class UserToken extends Token
             if($loginFail){
                 $this->processLoginError($wxResult);
             }else{
-                $this->grantToken($wxResult);
+                return $this->grantToken($wxResult);
             }
         }
     }
@@ -77,7 +77,7 @@ class UserToken extends Token
     }
 
     public function saveToCache($cachedValue){
-        $key = self::grantToken();
+        $key = self::generateToken();
         //转换成字符串
         $value = json_encode($cachedValue);
         $expire_in = config('setting.token_expire_in');

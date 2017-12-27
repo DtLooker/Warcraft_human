@@ -274,6 +274,83 @@ CREATE TABLE `user` (
   UNIQUE KEY `openid` (`openid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8mb4;
 
+-- ----------------------------
+-- Table structure for product_image
+-- ----------------------------
+DROP TABLE IF EXISTS `product_image`;
+CREATE TABLE `product_image` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_id` int(11) NOT NULL COMMENT '外键，关联图片表',
+  `delete_time` int(11) DEFAULT NULL COMMENT '状态，主要表示是否删除，也可以扩展其他状态',
+  `order` int(11) NOT NULL DEFAULT '0' COMMENT '图片排序序号',
+  `product_id` int(11) NOT NULL COMMENT '商品id，外键',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of product_image
+-- ----------------------------
+INSERT INTO `product_image` VALUES ('4', '19', null, '1', '11');
+INSERT INTO `product_image` VALUES ('5', '20', null, '2', '11');
+INSERT INTO `product_image` VALUES ('6', '21', null, '3', '11');
+INSERT INTO `product_image` VALUES ('7', '22', null, '4', '11');
+INSERT INTO `product_image` VALUES ('8', '23', null, '5', '11');
+INSERT INTO `product_image` VALUES ('9', '24', null, '6', '11');
+INSERT INTO `product_image` VALUES ('10', '25', null, '7', '11');
+INSERT INTO `product_image` VALUES ('11', '26', null, '8', '11');
+INSERT INTO `product_image` VALUES ('12', '27', null, '9', '11');
+INSERT INTO `product_image` VALUES ('13', '28', null, '11', '11');
+INSERT INTO `product_image` VALUES ('14', '29', null, '10', '11');
+INSERT INTO `product_image` VALUES ('18', '62', null, '12', '11');
+INSERT INTO `product_image` VALUES ('19', '63', null, '13', '11');
+
+
+-- ----------------------------
+-- Table structure for product_property
+-- ----------------------------
+DROP TABLE IF EXISTS `product_property`;
+CREATE TABLE `product_property` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) DEFAULT '' COMMENT '详情属性名称',
+  `detail` varchar(255) NOT NULL COMMENT '详情属性',
+  `product_id` int(11) NOT NULL COMMENT '商品id，外键',
+  `delete_time` int(11) DEFAULT NULL,
+  `update_time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of product_property
+-- ----------------------------
+INSERT INTO `product_property` VALUES ('1', '品名', '杨梅', '11', null, null);
+INSERT INTO `product_property` VALUES ('2', '口味', '青梅味 雪梨味 黄桃味 菠萝味', '11', null, null);
+INSERT INTO `product_property` VALUES ('3', '产地', '火星', '11', null, null);
+INSERT INTO `product_property` VALUES ('4', '保质期', '180天', '11', null, null);
+INSERT INTO `product_property` VALUES ('5', '品名', '梨子', '2', null, null);
+INSERT INTO `product_property` VALUES ('6', '产地', '金星', '2', null, null);
+INSERT INTO `product_property` VALUES ('7', '净含量', '100g', '2', null, null);
+INSERT INTO `product_property` VALUES ('8', '保质期', '10天', '2', null, null);
+
+
+-- ----------------------------
+-- Table structure for user_address
+-- ----------------------------
+DROP TABLE IF EXISTS `user_address`;
+CREATE TABLE `user_address` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL COMMENT '收获人姓名',
+  `mobile` varchar(20) NOT NULL COMMENT '手机号',
+  `province` varchar(20) DEFAULT NULL COMMENT '省',
+  `city` varchar(20) DEFAULT NULL COMMENT '市',
+  `country` varchar(20) DEFAULT NULL COMMENT '区',
+  `detail` varchar(100) DEFAULT NULL COMMENT '详细地址',
+  `delete_time` int(11) DEFAULT NULL,
+  `user_id` int(11) NOT NULL COMMENT '外键',
+  `update_time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4;
+
 
 
 

@@ -15,19 +15,30 @@ use think\Route;
 //Banner  h.com/api/v1/banner/1
 Route::get('api/:version/banner/:id', 'api/:version.Banner/getBanner');
 
+
 //Theme  h.com/api/v1/theme?ids=1,2,3
 Route::get('api/:version/theme', 'api/:version.Theme/getSimpleList');
-
 //Theme type   h.com/api/v1/theme/1
 Route::get('api/:version/theme/:id', 'api/:version.Theme/getComplexList');
 
-//Product   h.com/api/v1/product?count=15
-Route::get('api/:version/product', 'api/:version.Product/getRecent');
-// Category--->Product    h.com/api/v1/product/by_category?id=4
-Route::get('api/:version/product/by_category', 'api/:version.Product/getAllInCategory');
+
+Route::group('api/:version/product', function () {
+    // Category--->Product    h.com/api/v1/product/by_category?id=4
+    Route::get('/by_category', 'api/:version.Product/getAllInCategory');
+    // Product detail   h.com/api/v1/product/11
+    Route::get('/:id', 'api/:version.Product/getOne', [], ['id' => '\d+']);
+    //Product   h.com/api/v1/product/recent?count=15
+    Route::get('/recent', 'api/:version.Product/getRecent');
+
+});
+
 
 //Category  h.com/api/v1/category/all
 Route::get('api/:version/category/all', 'api/:version.Category/getAllCategory');
 
+
 //Token
 Route::post('api/:version/token/user', 'api/:version.Token/getToken');
+
+//Address
+Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress');

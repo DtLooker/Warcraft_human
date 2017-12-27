@@ -13,7 +13,7 @@ class Theme extends BaseModel
 {
     protected $hidden = ['delete_time', 'update_time', 'head_img_id', 'topic_img_id'];
 
-    //一对多的关系有hasOne()方法和belongsTo()两个方法
+    //一对一的关系有hasOne()方法和belongsTo()两个方法
     //当通过有外键的一方关联另一方，用belongsTo()方法
     //当通过没有外键一方关联有外键一方，用hasOne()方法
     public function topicImg(){
