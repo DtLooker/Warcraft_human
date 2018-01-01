@@ -22,4 +22,5 @@ class Token
         $token = $user->get();
         return $token;
     }
+
 }

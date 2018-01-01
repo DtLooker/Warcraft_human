@@ -9,14 +9,23 @@
 namespace app\api\controller\v1;
 
 
-use app\api\validate\AddressNew;
-use app\api\service\Token as TokenService;
+use app\api\controller\BaseController;
 use app\api\model\User as UserModel;
+use app\api\service\Token as TokenService;
+use app\api\validate\AddressNew;
 use app\lib\exception\SuccessMsg;
 use app\lib\exception\UserException;
 
-class Address
+class Address extends BaseController
 {
+    //继承Controller后，可以设置前置方法。
+    //$beforeActionList数组中的键'checkPrimaryScope'是要前置方法的方法名
+    //$beforeActionList数组中的值'only'后面设置执行时需要前置方法的方法名'createOrUpdateAddress'
+    //可以设置多个需要执行前置方法的方法，方法名之间用逗号隔开
+    protected $beforeActionList = [
+        'needPrimaryScope' => ['only' => 'createOrUpdateAddress']
+    ];
+
     public function createOrUpdateAddress(){
 
        $validate = new AddressNew();

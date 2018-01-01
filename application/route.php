@@ -36,9 +36,12 @@ Route::group('api/:version/product', function () {
 //Category  h.com/api/v1/category/all
 Route::get('api/:version/category/all', 'api/:version.Category/getAllCategory');
 
-
 //Token
 Route::post('api/:version/token/user', 'api/:version.Token/getToken');
 
 //Address
-Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress');
+Route::get('api/:version/address', 'api/:version.Address/createOrUpdateAddress');
+
+//Order
+Route::get('api/:version/order', 'api/:version.Order/placeOrder');
+

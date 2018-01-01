@@ -352,5 +352,48 @@ CREATE TABLE `user_address` (
 ) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4;
 
 
+-- ----------------------------
+-- Table structure for order
+-- ----------------------------
+DROP TABLE IF EXISTS `order`;
+CREATE TABLE `order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_no` varchar(20) NOT NULL COMMENT '订单号',
+  `user_id` int(11) NOT NULL COMMENT '外键，用户id，注意并不是openid',
+  `delete_time` int(11) DEFAULT NULL,
+  `create_time` int(11) DEFAULT NULL,
+  `total_price` decimal(6,2) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT '1' COMMENT '1:未支付， 2：已支付，3：已发货 , 4: 已支付，但库存不足',
+  `snap_img` varchar(255) DEFAULT NULL COMMENT '订单快照图片',
+  `snap_name` varchar(80) DEFAULT NULL COMMENT '订单快照名称',
+  `total_count` int(11) NOT NULL DEFAULT '0',
+  `update_time` int(11) DEFAULT NULL,
+  `snap_items` text COMMENT '订单其他信息快照（json)',
+  `snap_address` varchar(500) DEFAULT NULL COMMENT '地址快照',
+  `prepay_id` varchar(100) DEFAULT NULL COMMENT '订单微信支付的预订单id（用于发送模板消息）',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `order_no` (`order_no`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=539 DEFAULT CHARSET=utf8mb4;
+-- ----------------------------
+-- Records of order
+-- ----------------------------
+
+
+-- ----------------------------
+-- Table structure for order_product
+-- ----------------------------
+DROP TABLE IF EXISTS `order_product`;
+CREATE TABLE `order_product` (
+  `order_id` int(11) NOT NULL COMMENT '联合主键，订单id',
+  `product_id` int(11) NOT NULL COMMENT '联合主键，商品id',
+  `count` int(11) NOT NULL COMMENT '商品数量',
+  `delete_time` int(11) DEFAULT NULL,
+  `update_time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`product_id`,`order_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- ----------------------------
+-- Records of order_product
+-- ----------------------------
 
 

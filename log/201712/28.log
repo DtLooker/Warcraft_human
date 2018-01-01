@@ -53,3 +53,35 @@
 [ sql ] [ SQL ] UPDATE `user_address`  SET `mobile`='18888888889'  WHERE  `id` = 35 [ RunTime:0.053758s ]
 
 ---------------------------------------------------------------
+[ 2017-12-28T19:55:45+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=19290
+[ log ] h.com/api/v1/token/user?XDEBUG_SESSION_START=19290 [运行时间：0.318292s][吞吐率：3.14req/s] [内存消耗：2,661.29kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002010s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004697s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.000811s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T19:57:24+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.093311s][吞吐率：10.72req/s] [内存消耗：3,092.60kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004171s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004149s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000738s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T19:57:51+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=19290
+[ log ] h.com/api/v1/token/user?XDEBUG_SESSION_START=19290 [运行时间：0.459304s][吞吐率：2.18req/s] [内存消耗：2,660.38kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001210s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005474s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.000925s ]
+
+---------------------------------------------------------------
+[ 2017-12-28T19:58:14+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] h.com/api/v1/address [运行时间：0.060844s][吞吐率：16.44req/s] [内存消耗：3,092.60kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004127s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.003870s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000767s ]
+
+---------------------------------------------------------------
