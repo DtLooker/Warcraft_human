@@ -1,0 +1,112 @@
+[ 2018-01-02T21:48:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=19290
+[ log ] h.com/api/v1/token/user?XDEBUG_SESSION_START=19290 [运行时间：1.296906s][吞吐率：0.77req/s] [内存消耗：2,667.73kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001414s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038405s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.013599s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T21:49:56+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=19290
+[ log ] h.com/api/v1/token/user?XDEBUG_SESSION_START=19290 [运行时间：0.788183s][吞吐率：1.27req/s] [内存消耗：2,667.91kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001712s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007534s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.001345s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T21:51:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user?XDEBUG_SESSION_START=19290
+[ log ] h.com/api/v1/token/user?XDEBUG_SESSION_START=19290 [运行时间：0.337915s][吞吐率：2.96req/s] [内存消耗：2,667.91kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001923s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008242s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.000723s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T21:51:41+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] h.com/api/v1/token/user [运行时间：0.422341s][吞吐率：2.37req/s] [内存消耗：2,667.72kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010749s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004690s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.000756s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T21:53:32+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] h.com/api/v1/token/user [运行时间：0.359504s][吞吐率：2.78req/s] [内存消耗：2,667.72kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001475s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006263s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.001013s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:01:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] h.com/api/v1/token/user [运行时间：0.330934s][吞吐率：3.02req/s] [内存消耗：2,667.09kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001173s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004196s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.000702s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:03:27+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] h.com/api/v1/token/user [运行时间：0.386252s][吞吐率：2.59req/s] [内存消耗：2,667.72kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001473s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007236s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.001155s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:05:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] h.com/api/v1/token/user [运行时间：0.436355s][吞吐率：2.29req/s] [内存消耗：2,667.74kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003314s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007943s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.001481s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:13:45+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] h.com/api/v1/token/user [运行时间：0.311406s][吞吐率：3.21req/s] [内存消耗：2,667.74kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001971s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007694s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'owzHz0KDTNTEhpjhxGxcp_kSQZIc' LIMIT 1 [ RunTime:0.000826s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:16:56+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] h.com/api/v1/order [运行时间：0.118976s][吞吐率：8.41req/s] [内存消耗：3,093.76kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001142s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004642s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.015142s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:18:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] h.com/api/v1/order [运行时间：0.058075s][吞吐率：17.22req/s] [内存消耗：3,093.76kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001069s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004748s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000814s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:18:42+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] h.com/api/v1/order [运行时间：0.054975s][吞吐率：18.19req/s] [内存消耗：3,093.76kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004124s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000957s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:21:54+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] h.com/api/v1/order [运行时间：0.280140s][吞吐率：3.57req/s] [内存消耗：3,187.09kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004309s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.006100s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.030441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.004426s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items`) VALUES (1 , 'B102029145319687' , 0.02 , 2 , 'http://h.com/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":35,\"name\":\"looker\",\"mobile\":\"18888888889\",\"province\":\"\\u6e56\\u5357\",\"city\":\"\\u957f\\u6c99\",\"country\":\"\\u6768\\u6167\",\"detail\":\"\\u54c8\\u54c8\\u54c8\",\"delete_time\":null,\"user_id\":1,\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"counts\":1,\"price\":\"0.01\",\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.01,\"main_img_url\":\"http:\\/\\/h.com\\/images\\/product-vg@1.png\"},{\"id\":2,\"haveStock\":true,\"counts\":1,\"price\":\"0.01\",\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.01,\"main_img_url\":\"http:\\/\\/h.com\\/images\\/product-dryfruit@1.png\"}]') [ RunTime:0.087354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.003848s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 1 , 539) [ RunTime:0.000857s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 1 , 539) [ RunTime:0.000332s ]
+
+---------------------------------------------------------------
+[ 2018-01-02T22:31:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] h.com/api/v1/order [运行时间：0.252342s][吞吐率：3.96req/s] [内存消耗：3,187.30kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001115s ] mysql:dbname=warcraft;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006382s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2) [ RunTime:0.001327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004537s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.004338s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (1 , 'B102034891115040' , 0.02 , 2 , 'http://h.com/images/product-vg@1.png' , '芹菜 半斤等' , '{\"id\":35,\"name\":\"looker\",\"mobile\":\"18888888889\",\"province\":\"\\u6e56\\u5357\",\"city\":\"\\u957f\\u6c99\",\"country\":\"\\u6768\\u6167\",\"detail\":\"\\u54c8\\u54c8\\u54c8\",\"delete_time\":null,\"user_id\":1,\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"counts\":1,\"price\":\"0.01\",\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.01,\"main_img_url\":\"http:\\/\\/h.com\\/images\\/product-vg@1.png\"},{\"id\":2,\"haveStock\":true,\"counts\":1,\"price\":\"0.01\",\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.01,\"main_img_url\":\"http:\\/\\/h.com\\/images\\/product-dryfruit@1.png\"}]' , 1514903489 , 1514903489) [ RunTime:0.083135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.013719s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 1 , 540) [ RunTime:0.010759s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 1 , 540) [ RunTime:0.000658s ]
+
+---------------------------------------------------------------

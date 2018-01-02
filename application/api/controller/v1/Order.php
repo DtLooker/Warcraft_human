@@ -12,6 +12,7 @@ namespace app\api\controller\v1;
 use app\api\controller\BaseController;
 use app\api\validate\OrderPlace;
 use app\api\service\Token as TokenService;
+use app\api\service\Order as OrderService;
 
 class Order extends BaseController
 {
@@ -26,7 +27,7 @@ class Order extends BaseController
     // 成功： 进行库存量的扣除
 
     protected $beforeActionList = [
-        'needExclusiveScope' => ['only' => 'placeOrder']
+        'checkExclusiveScope' => ['only' => 'placeOrder']
     ];
 
     public function placeOrder(){
@@ -37,5 +38,10 @@ class Order extends BaseController
         $products = input('post.products/a');
         //根据 token 获取缓存里面的uid
         $uid = TokenService::getCurrentUid();
+
+        $order = new OrderService();
+        $status = $order->place($uid, $products);
+
+        return $status;
     }
 }

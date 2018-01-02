@@ -20,7 +20,7 @@ class BaseController extends Controller
     }
 
     // app用户才具备的权限
-    protected function needExclusiveScope(){
+    protected function checkExclusiveScope(){
         TokenService::needExclusiveScope();
     }
 }

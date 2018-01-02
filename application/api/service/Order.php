@@ -13,6 +13,10 @@ use app\api\model\Product;
 use app\api\model\UserAddress;
 use app\lib\exception\OrderException;
 use app\lib\exception\UserException;
+use think\Db;
+use think\Exception;
+use app\api\model\Order as OrderModel;
+use app\api\model\OrderProduct;
 
 class Order
 {
@@ -39,6 +43,75 @@ class Order
         //开始创建订单
         //订单快照，即历史订单页面（因为商品可能下架，或者价格什么变化。所以需要保存下单时候的状态。而非动态获取）
         $orderSnap = $this->snapOrder($status);
+        $order = $this->createOrder($orderSnap);
+        $order['pass'] = true;
+
+        return $order;
+    }
+
+    /**
+     * 创建订单  多对多关系，换个角度，一个订单对多种商品。即一对多
+     *
+     *
+     * @param $snap
+     * @return array
+     * @throws Exception
+     */
+    private function createOrder($snap)
+    {
+        //事物，要保证$order->save()与$orderProduct->saveAll()同时执行
+        Db::startTrans();
+        try {
+            //先存储 1
+            $orderNo = $this->makeOrderNo();
+            $order = new OrderModel();
+            $order->user_id = $this->uid;
+            $order->order_no = $orderNo;
+            $order->total_price = $snap['orderPrice'];
+            $order->total_count = $snap['totalCount'];
+            $order->snap_img = $snap['snapImg'];
+            $order->snap_name = $snap['snapName'];
+            $order->snap_address = $snap['snapAddress'];
+            $order->snap_items = json_encode($snap['pStatus']);
+
+            $order->save();
+
+            $orderID = $order->id;
+            $create_time = $order->create_time;
+
+            //给oProduct 增加一个字段， PS： 注意 &$oProduct 写法
+            foreach ($this->oProducts as &$oProduct){
+                $oProduct['order_id'] = $orderID;
+            }
+
+            //再处理多
+            $orderProduct = new OrderProduct();
+            $orderProduct->saveAll($this->oProducts);
+
+            Db::commit();
+
+            return [
+                'order_no' => $orderNo,
+                'order_id' => $orderID,
+                'create_time' => $create_time
+            ];
+
+        } catch (Exception $e) {
+            Db::rollback();
+            throw $e;
+        }
+    }
+
+    public static function makeOrderNo()
+    {
+        $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
+
+        // dechex() 把十进制转换为十六进制
+        $orderSn = $yCode[intval(date('Y') - 2017)] . strtoupper(dechex(date('m')))
+            . date('d') . substr(time(), -5) . substr(microtime(), 2, 5)
+            . sprintf('%02d', rand(0, 99));
+
+        return $orderSn;
     }
 
     //创建订单快照
@@ -62,16 +135,17 @@ class Order
         $snap['snapImg'] = $this->products[0]['main_img_url'];
 
         //商品总类大于1，简介要加个‘等’字
-        if(count($this->products) > 1){
+        if (count($this->products) > 1) {
             $snap['snapName'] .= '等';
         }
         return $snap;
     }
 
-    private function getUserAddress(){
+    private function getUserAddress()
+    {
         $userAddress = UserAddress::where('user_id', '=', $this->uid)
             ->find();
-        if(!$userAddress){
+        if (!$userAddress) {
             throw new UserException([
                 'msg' => '用户收货地址不存在，下单失败',
                 'errorCode' => 60001
@@ -124,7 +198,7 @@ class Order
     private function getOrderStatus()
     {
         $status = [
-            'pass' => 0,
+            'pass' => true,
             'orderPrice' => 0,
             'totalCount' => 0,
             'pStatusArray' => []

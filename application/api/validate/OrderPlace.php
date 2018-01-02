@@ -54,11 +54,17 @@ class OrderPlace extends BaseValidate
         foreach ($values as $value){
             $this->checkProduct($value);
         }
+        return true;
     }
 
     //检查单个商品
     public function checkProduct($value){
         $validate = new BaseValidate($this->singleRule);
-        $validate->check($value);
+        $result = $validate->check($value);
+        if(!$result){
+            throw new ParameterException([
+                'msg' => '商品列表参数错误'
+            ]);
+        }
     }
 }
