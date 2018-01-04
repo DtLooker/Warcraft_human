@@ -89,4 +89,16 @@ class Token
             throw new TokenException();
         }
     }
+
+    //检查是否是当前用户
+    public static function isValidateOperate($checkedUID){
+        if(!$checkedUID){
+            throw new Exception('检查UID时必须传入一个被检查的UID');
+        }
+        $currentOperateUID = self::getCurrentUid();
+        if($currentOperateUID == $checkedUID){
+            return true;
+        }
+        return false;
+    }
 }

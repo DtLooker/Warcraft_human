@@ -45,3 +45,8 @@ Route::get('api/:version/address', 'api/:version.Address/createOrUpdateAddress')
 //Order
 Route::post('api/:version/order', 'api/:version.Order/placeOrder');
 
+//Pay
+Route::post('api/:version/pay/pre_order', 'api/:version.Pay/getPreOrder');
+//Pay 微信支付回调
+Route::post('api/:version/pay/notify', 'api/:version.Pay/receiveNotify');
+

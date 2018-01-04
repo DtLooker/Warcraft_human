@@ -274,4 +274,15 @@ class Order
         }
         return $pStatus;
     }
+
+    //向外提供一个检查库存的方法
+    public function checkOrderStock($orderID){
+
+        $oProducts = OrderProduct::where('order_id', '=', $orderID)
+            ->select();
+        $this->oProducts = $oProducts;
+        $this->products = $this->getProductsByOrder($oProducts);
+        $status = $this->getOrderStatus();
+        return $status;
+    }
 }
